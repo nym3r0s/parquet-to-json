@@ -21,6 +21,5 @@ if __name__ == '__main__':
             jsonstr = df.to_json(orient='records')
             writeToFile(jsonstr, partNum)
             partNum += 1
-            input("done")
         except StopIteration:
             break
